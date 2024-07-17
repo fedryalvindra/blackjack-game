@@ -1,35 +1,37 @@
 {
   "files": {
     "main.css": "/blackjack-game/static/css/main.2ce1a498.css",
-    "main.js": "/blackjack-game/static/js/main.1c0cc99b.js",
-    "static/css/351.6ce249fb.chunk.css": "/blackjack-game/static/css/351.6ce249fb.chunk.css",
-    "static/js/351.a21d772e.chunk.js": "/blackjack-game/static/js/351.a21d772e.chunk.js",
+    "main.js": "/blackjack-game/static/js/main.2cab17ef.js",
+    "static/css/980.aa09b0ba.chunk.css": "/blackjack-game/static/css/980.aa09b0ba.chunk.css",
+    "static/js/980.fe18a9f5.chunk.js": "/blackjack-game/static/js/980.fe18a9f5.chunk.js",
     "static/js/3.a0ead307.chunk.js": "/blackjack-game/static/js/3.a0ead307.chunk.js",
     "static/css/316.751c0895.chunk.css": "/blackjack-game/static/css/316.751c0895.chunk.css",
     "static/js/316.b85bf32c.chunk.js": "/blackjack-game/static/js/316.b85bf32c.chunk.js",
     "static/css/682.deceb80a.chunk.css": "/blackjack-game/static/css/682.deceb80a.chunk.css",
     "static/js/682.7612c756.chunk.js": "/blackjack-game/static/js/682.7612c756.chunk.js",
-    "static/css/535.910d6b20.chunk.css": "/blackjack-game/static/css/535.910d6b20.chunk.css",
-    "static/js/535.f0faa921.chunk.js": "/blackjack-game/static/js/535.f0faa921.chunk.js",
+    "static/css/508.7a16a1a5.chunk.css": "/blackjack-game/static/css/508.7a16a1a5.chunk.css",
+    "static/js/508.10b40955.chunk.js": "/blackjack-game/static/js/508.10b40955.chunk.js",
     "static/css/286.f5a933cd.chunk.css": "/blackjack-game/static/css/286.f5a933cd.chunk.css",
     "static/media/WoodNav.png": "/blackjack-game/static/media/WoodNav.9ff3e45c82f9f0dd8376.png",
+    "static/media/King-Sekop.png": "/blackjack-game/static/media/King-Sekop.0a5d64a9e49a76a4ff05.png",
+    "static/media/Queen-Hati.png": "/blackjack-game/static/media/Queen-Hati.c39a2aece8cda5f37e1c.png",
     "static/media/curve_text.png": "/blackjack-game/static/media/curve_text.c81b7afe6fd9fe46abeb.png",
     "index.html": "/blackjack-game/index.html",
     "main.2ce1a498.css.map": "/blackjack-game/static/css/main.2ce1a498.css.map",
-    "main.1c0cc99b.js.map": "/blackjack-game/static/js/main.1c0cc99b.js.map",
-    "351.6ce249fb.chunk.css.map": "/blackjack-game/static/css/351.6ce249fb.chunk.css.map",
-    "351.a21d772e.chunk.js.map": "/blackjack-game/static/js/351.a21d772e.chunk.js.map",
+    "main.2cab17ef.js.map": "/blackjack-game/static/js/main.2cab17ef.js.map",
+    "980.aa09b0ba.chunk.css.map": "/blackjack-game/static/css/980.aa09b0ba.chunk.css.map",
+    "980.fe18a9f5.chunk.js.map": "/blackjack-game/static/js/980.fe18a9f5.chunk.js.map",
     "3.a0ead307.chunk.js.map": "/blackjack-game/static/js/3.a0ead307.chunk.js.map",
     "316.751c0895.chunk.css.map": "/blackjack-game/static/css/316.751c0895.chunk.css.map",
     "316.b85bf32c.chunk.js.map": "/blackjack-game/static/js/316.b85bf32c.chunk.js.map",
     "682.deceb80a.chunk.css.map": "/blackjack-game/static/css/682.deceb80a.chunk.css.map",
     "682.7612c756.chunk.js.map": "/blackjack-game/static/js/682.7612c756.chunk.js.map",
-    "535.910d6b20.chunk.css.map": "/blackjack-game/static/css/535.910d6b20.chunk.css.map",
-    "535.f0faa921.chunk.js.map": "/blackjack-game/static/js/535.f0faa921.chunk.js.map",
+    "508.7a16a1a5.chunk.css.map": "/blackjack-game/static/css/508.7a16a1a5.chunk.css.map",
+    "508.10b40955.chunk.js.map": "/blackjack-game/static/js/508.10b40955.chunk.js.map",
     "286.f5a933cd.chunk.css.map": "/blackjack-game/static/css/286.f5a933cd.chunk.css.map"
   },
   "entrypoints": [
     "static/css/main.2ce1a498.css",
-    "static/js/main.1c0cc99b.js"
+    "static/js/main.2cab17ef.js"
   ]
 }
