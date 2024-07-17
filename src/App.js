@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Provider } from "react-redux";
 import { lazy, Suspense } from "react";
 
@@ -20,7 +20,8 @@ function App() {
       <BrowserRouter>
         <Suspense fallback={<SpinnerFullPage />}>
           <Routes>
-            <Route index element={<HomePage />} />
+            <Route index element={<Navigate to="/blackjack-game" />} />
+            <Route path="/blackjack-game" element={<HomePage />} />
             <Route path="/app" element={<AppLayout />}>
               <Route index element={<FillName />} />
               <Route

@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+
+import moneyImg from "./asset/Money.png";
 
 import styles from "./styles/GameNav.module.css";
-import { useSelector } from "react-redux";
 
 const backColor = {
   color: "#42b626",
@@ -31,7 +33,7 @@ function GameNav() {
         <li className={styles.coin}>
           <p className={styles.title}>Your Money</p>
           <div>
-            <img src="/assets/Money.png" alt="Money" />
+            <img src={moneyImg} alt="Money" />
             <p>{money}</p>
           </div>
         </li>

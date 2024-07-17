@@ -1,22 +1,24 @@
 import Cards from "./Cards";
 import HomeContentDetail from "./HomeContentDetail";
 
+import queenHati from "./assets/Queen-Hati.png";
+import eightClover from "./assets/8-Clover.png";
+import kingSekop from "./assets/King-Sekop.png";
+import asSekop from "./assets/AS-Sekop.png";
+
 import styles from "./styles/HomeContent.module.css";
 
 function HomeContent() {
   return (
     <section className={styles.content}>
       <Cards>
-        <img
-          src="assets/Queen-Hati.png"
-          alt="QUEEN"
-        />
-        <img src="assets/8-Clover.png" alt="CLOVER" />
+        <img src={queenHati} alt="QUEEN" />
+        <img src={eightClover} alt="CLOVER" />
       </Cards>
       <HomeContentDetail />
       <Cards>
-        <img src="assets/King-Sekop.png" alt="KING" />
-        <img src="assets/AS-Sekop.png" alt="AS" />
+        <img src={kingSekop} alt="KING" />
+        <img src={asSekop} alt="AS" />
       </Cards>
     </section>
   );
