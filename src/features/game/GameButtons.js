@@ -10,6 +10,7 @@ import { calculatePoint } from "./Game";
 
 import Button from "./Button";
 import styles from "./styles/GameButtons.module.css";
+import { useState } from "react";
 
 const buttonStyles = [
   {
@@ -36,8 +37,14 @@ function GameButtons() {
   const { player1, player2, bet, isDeal, is2x, isLoading } = useSelector(
     (store) => store.game
   );
+
   const dispatch = useDispatch();
-  
+
+  const handleBet = (e) => {
+    e.preventDefault();
+    dispatch(betDeal());
+  };
+
   return (
     <div className={styles.content}>
       <Button
@@ -65,15 +72,15 @@ function GameButtons() {
       >
         Deal
       </Button>
-      <div className={styles.bet}>
+      <form className={styles.bet} onSubmit={handleBet}>
         <h1>Bet</h1>
         <input
           type="number"
           value={bet}
           onChange={(e) => dispatch(addBet(Number(e.target.value)))}
-          disabled={isDeal}
+          disabled={isLoading || isDeal}
         />
-      </div>
+      </form>
       <Button
         background={buttonStand.background}
         hover={buttonStand.hover}

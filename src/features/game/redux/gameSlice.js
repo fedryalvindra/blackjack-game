@@ -42,10 +42,10 @@ const gameSlice = createSlice({
         };
       },
       reducer(state, action) {
+        state.isDeal = true;
         state.player1 = action.payload.player1Data;
         state.player2 = action.payload.player2Data;
         state.isLoading = false;
-        state.isDeal = true;
         state.is2x = state.bet * 2 > state.money ? true : false;
       },
     },
