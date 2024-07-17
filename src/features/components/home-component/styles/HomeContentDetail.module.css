@@ -1,0 +1,89 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  margin-bottom: 70px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.texts h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.texts h1 span {
+  background: linear-gradient(
+    90deg,
+    #338444 57.04%,
+    #137411 74.82%,
+    #40ff3d 92.25%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnimation 1s infinite;
+}
+
+@keyframes textAnimation {
+  0% {
+    background: linear-gradient(
+      90deg,
+      #338444 57.04%,
+      #137411 74.82%,
+      #40ff3d 92.25%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textAnimation 1s infinite;
+  }
+  50% {
+    background: linear-gradient(
+      90deg,
+      #338444 20.04%,
+      #137411 50.82%,
+      #40ff3d 92.25%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textAnimation 1s infinite;
+  }
+}
+
+.texts p {
+  color: #fff;
+
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 1800px) {
+  .texts h1 {
+    font-size: 72px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .texts h1 {
+    font-size: 32px;
+  }
+
+  .texts p {
+    font-size: 14px;
+  }
+}

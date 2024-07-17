@@ -1,0 +1,136 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+
+  justify-content: space-between;
+  list-style-type: none;
+
+  background-image: url(/public/assets/WoodNav.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 5px 20px;
+}
+
+.nav ul li a {
+  background: #42b626;
+  color: #000;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+
+  line-height: normal;
+  text-decoration: none;
+
+  padding: 16px;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+.coin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+
+.title {
+  color: #d4ce2b;
+
+  text-align: center;
+  -webkit-text-stroke: 2px #000;
+
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.coin div {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  gap: 14px;
+  align-self: stretch;
+
+  border-radius: 20px;
+  border: 5px solid #181203;
+
+  background: #423001;
+}
+
+.coin div p {
+  color: #fff;
+  font-size: 24px;
+}
+
+.line {
+  display: flex;
+  align-self: stretch;
+  width: 100%;
+  height: 10px;
+  background-color: #503900;
+
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+@media only screen and (max-width: 1800px) {
+  .nav ul {
+    padding: 5px 10px;
+  }
+  .nav ul li a {  
+    font-size: 13px;   
+    padding: 10px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .coin div {
+    padding: 8px;
+    gap: 10px;
+  }
+  .coin img {
+    width: 20px;
+  }
+  .coin div p {
+    color: #fff;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav ul {
+    padding: 1px 10px;
+  }
+  .nav ul li a {  
+    font-size: 13px;   
+    padding: 10px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .coin div {
+    padding: 8px;
+    gap: 10px;
+  }
+  .coin img {
+    width: 20px;
+  }
+  .coin div p {
+    color: #fff;
+    font-size: 18px;
+  }
+}

@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Provider } from "react-redux";
+import { lazy, Suspense } from "react";
+
+import store from "./store";
+import SpinnerFullPage from "./features/components/SpinnerFullPage";
+import ProtectedRoute from "./pages/ProtectedRoute";
+
+const HomePage = lazy(() => import("./pages/HomePage"));
+const PageNotFound = lazy(() => import("./pages/PageNotFound"));
+const AppLayout = lazy(() => import("./pages/AppLayout"));
+const FillName = lazy(() =>
+  import("./features/components/fillname-component/FillName")
+);
+const Game = lazy(() => import("./features/game/Game"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Suspense fallback={<SpinnerFullPage />}>
+          <Routes>
+            <Route index element={<HomePage />} />
+            <Route path="/app" element={<AppLayout />}>
+              <Route index element={<FillName />} />
+              <Route
+                path=":name"
+                element={
+                  <ProtectedRoute>
+                    <Game />
+                  </ProtectedRoute>
+                }
+              />
+            </Route>
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
+    </Provider>
   );
 }
 

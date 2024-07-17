@@ -1,0 +1,38 @@
+.content {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+@media only screen and (max-width: 1800px) {
+  .content {
+    gap: 16px;
+  }
+  .content img {
+    width: 140px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .content img {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  
+  .content img {
+    width: 100px;
+  }
+}

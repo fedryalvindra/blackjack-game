@@ -1,0 +1,11 @@
+.page {
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #177100 0%,
+    #1d8b01 46.5%,
+    #24aa02 77%,
+    #2ee001 100%
+  );
+  overflow: hidden;
+}
